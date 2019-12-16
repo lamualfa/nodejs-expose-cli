@@ -1,0 +1,26 @@
+{
+  "name": "expose-cli",
+  "version": "0.0.1",
+  "description": "Make your function runnable from CLI",
+  "main": "index.js",
+  "url": "https://github.com/laodemalfatih/nodejs-expose-cli",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/laodemalfatih/nodejs-expose-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/laodemalfatih/nodejs-expose-cli/issues"
+  },
+  "author": "Laode Muhammad Al Fatih <laodemalfatih@gmail.com> (https://github.com/laodemalfatih)",
+  "license": "MIT",
+  "dependencies": {
+    "xtend": "^4.0.2"
+  },
+  "keywords": [
+    "cli",
+    "expose",
+    "function",
+    "args",
+    "console"
+  ]
+}

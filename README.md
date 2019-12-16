@@ -1,4 +1,6 @@
-# Simple Way To Run Your Local Function From CLI
+# <a href="https://imgbb.com/"><img src="https://i.ibb.co/cctCBkx/coding.png" alt="coding" border="0"></a> expose-cli
+
+## Simple Way To Run Your Local Function From CLI
 
 `node index.js localFunction arg1 arg2 arg3`
 
@@ -79,10 +81,3 @@ exposeCli(
 - Can be used using [webpack](https://github.com/webpack/webpack)
 - Supports calling `async` function or function that return `Promise` or closures
 - Supports function that `throw` error
-
-## Change Log
-
-### **1.0.1**
-
-- Fixed Bug
-- Adding `exitOnSuccess` and `exitOnError` options

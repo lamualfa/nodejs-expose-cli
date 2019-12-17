@@ -1,6 +1,6 @@
 {
   "name": "expose-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Make your function runnable from CLI",
   "main": "index.js",
   "url": "https://github.com/laodemalfatih/nodejs-expose-cli",

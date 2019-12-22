@@ -1,6 +1,4 @@
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/cctCBkx/coding.png" alt="coding" border="0"></a> 
-
-# expose-cli
+# <a href="https://imgbb.com/"><img src="https://i.ibb.co/cctCBkx/coding.png" alt="coding" border="0"></a>&nbsp;&nbsp;**expose-cli**
 
 ## Simple Way To Run Your Local Function From CLI
 
@@ -92,8 +90,9 @@ exposeCli(
     printReturn: true
   }
 );
-
 ```
+
+### Run local function
 
 **Execute**
 
@@ -103,32 +102,46 @@ exposeCli(
 
 `Printed from printSyncWithArg: world`
 
-**Execute command `help`**
+<br />
 
-`node index.js printSyncWithArg world`
+### Print all listed handler with command `help`
+
+**Execute command**
+
+`node index.js printSyncWithArg help`
 
 **Output**
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/DKtHMRm/Screenshot-from-2019-12-22-17-10-58.png" alt="Screenshot-from-2019-12-22-17-10-58" border="0"></a>
+
+#### **IMPORTANT!**
+
+The `help` command will display an `<unreachable>` message if you use:
+
+- Closure function. Ex: `() => {}`
+- Rest arguments. Ex: `function(...args)`
+- Function stored in a variable. Ex: `const handler= function() {}`
+- A method in a Class
+- Anonymous function
 
 ## Calling Format
 
-`exposeCli(handlers, [config])`
+### `exposeCli(handlers, [config])`
 
-### `handlers`
+#### `handlers`
 
-Object format:
+Format (Object):
 
-`name: handler`
+`command` : `handler`
 
-- name: `string`
-- handler:
-  - `function`
-  - `object`
-    - `name`: `string`
-    - `args`: `array`
-    - `description`: `string`
+- `command`: `string`
+- `handler`: `function` or `object`
+  - name: `string`
+  - args: `array`
+  - description: `string`
+  - handler: `function`
 
-### `config`
+#### `config`
 
 ```javascript
 {
@@ -161,7 +174,7 @@ Object format:
 ## Support
 
 - Can be used using [webpack](https://github.com/webpack/webpack)
-- Supports calling `async` function or function that return `Promise` or closures
+- Supports calling `async` function or function that return `Promise` or closure
 - Supports function that `throw` an error
 
 ## Change Log
